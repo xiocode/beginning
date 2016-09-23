@@ -12,7 +12,22 @@
 		94337A8E1D94EB0200A408E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94337A8C1D94EB0200A408E0 /* Main.storyboard */; };
 		94337A901D94EB0200A408E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94337A8F1D94EB0200A408E0 /* Assets.xcassets */; };
 		94337A931D94EB0200A408E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94337A911D94EB0200A408E0 /* LaunchScreen.storyboard */; };
+		94CFABA81D95239900907013 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CFABA71D95239900907013 /* QRCodeReader.framework */; };
+		94CFABAB1D952C1000907013 /* QRCodeReader.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94CFABA71D95239900907013 /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94CFABAA1D952C0300907013 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				94CFABAB1D952C1000907013 /* QRCodeReader.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		94337A851D94EB0200A408E0 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +37,7 @@
 		94337A8F1D94EB0200A408E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94337A921D94EB0200A408E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94337A941D94EB0200A408E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CFABA71D95239900907013 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CFABA81D95239900907013 /* QRCodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 			children = (
 				94337A871D94EB0200A408E0 /* HelloWorld */,
 				94337A861D94EB0200A408E0 /* Products */,
+				94CFABA41D95234900907013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,14 @@
 			path = HelloWorld;
 			sourceTree = "<group>";
 		};
+		94CFABA41D95234900907013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94CFABA71D95239900907013 /* QRCodeReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +100,7 @@
 				94337A811D94EB0200A408E0 /* Sources */,
 				94337A821D94EB0200A408E0 /* Frameworks */,
 				94337A831D94EB0200A408E0 /* Resources */,
+				94CFABAA1D952C0300907013 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MK85X9ZW4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lol.tian.HelloWorld;
@@ -273,6 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MK85X9ZW4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lol.tian.HelloWorld;
