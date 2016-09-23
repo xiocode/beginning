@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessage() {
-        let messageController = UIAlertController(title: "测试", message: "测试一个", preferredStyle: UIAlertControllerStyle.alert)
+        let messageController = UIAlertController(title: "肥猫一号", message: "圆小肥", preferredStyle: UIAlertControllerStyle.alert)
         messageController.addAction(UIAlertAction(title: "确认", style: UIAlertActionStyle.default, handler: nil))
         self.present(messageController, animated: true, completion: nil)
     }
