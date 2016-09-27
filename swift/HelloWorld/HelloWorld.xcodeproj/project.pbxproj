@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9424C9521D9A2648005FCC6C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424C9511D9A2648005FCC6C /* ScanViewController.swift */; };
 		94337A891D94EB0200A408E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94337A881D94EB0200A408E0 /* AppDelegate.swift */; };
 		94337A8B1D94EB0200A408E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94337A8A1D94EB0200A408E0 /* ViewController.swift */; };
 		94337A8E1D94EB0200A408E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94337A8C1D94EB0200A408E0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9424C9511D9A2648005FCC6C /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		94337A851D94EB0200A408E0 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94337A881D94EB0200A408E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94337A8A1D94EB0200A408E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				94337A881D94EB0200A408E0 /* AppDelegate.swift */,
 				94337A8A1D94EB0200A408E0 /* ViewController.swift */,
+				9424C9511D9A2648005FCC6C /* ScanViewController.swift */,
 				94337A8C1D94EB0200A408E0 /* Main.storyboard */,
 				94337A8F1D94EB0200A408E0 /* Assets.xcassets */,
 				94337A911D94EB0200A408E0 /* LaunchScreen.storyboard */,
@@ -166,6 +169,7 @@
 			files = (
 				94337A8B1D94EB0200A408E0 /* ViewController.swift in Sources */,
 				94337A891D94EB0200A408E0 /* AppDelegate.swift in Sources */,
+				9424C9521D9A2648005FCC6C /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
